@@ -1,0 +1,64 @@
+.bg-imagem {
+    background-image: url("src/backgroundlevelup.png"); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+.logo-levelup {
+    height: auto;
+    max-width: 50% 
+} 
+
+.imagem-central {
+    height: 50vh;
+}
+
+.botao {
+    background: #ffda33;
+    border: solid black;
+    border-width: 2px;
+}
+
+
+
+
+
+
+.seta{
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%,-50%);
+}
+.seta span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #ffea2a;
+    border-right: 5px solid #ffe75c;
+    transform: rotate(315deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.seta span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.seta span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(315deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(315deg) translate(20px,20px);
+    }
+}
