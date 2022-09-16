@@ -1,4 +1,6 @@
-.bg-imagem {
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
     background-image: url("src/backgroundlevelup.png"); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -17,56 +19,8 @@
 }
 
 .botao {
+    font-family: 'Press Start 2P', cursive;
     background: #ffda33;
     border: solid black;
     border-width: 2px;
 }
-
-/* Setinha e animação */
-#seta-animada {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .seta {
-    width: 5vw;
-    height: 5vw;
-    border: 2.5vw solid;
-    border-color: rgb(252, 236, 17) transparent transparent rgb(255, 252, 63);
-    transform: rotate(-225deg);
-  }
-  
-  .setaSliding {
-    position: absolute;
-    -webkit-animation: slide 4s linear infinite; 
-            animation: slide 4s linear infinite;
-  }
-  
-  .delay1 {
-    -webkit-animation-delay: 1s; 
-      animation-delay: 1s;
-  }
-  .delay2 {
-    -webkit-animation-delay: 2s; 
-      animation-delay: 2s;
-  }
-  .delay3 {
-    -webkit-animation-delay: 3s; 
-      animation-delay: 3s;
-  }
-  
-  @-webkit-keyframes slide {
-      0% { opacity:0; transform: translateX(-15vw); }  
-     20% { opacity:1; transform: translateX(-9vw); } 
-     80% { opacity:1; transform: translateX(9vw); }  
-    100% { opacity:0; transform: translateX(15vw); } 
-  }
-  @keyframes slide {
-    0% { opacity:0; transform: translateX(-15vw); }  
-    20% { opacity:1; transform: translateX(-9vw); } 
-    80% { opacity:1; transform: translateX(9vw); }  
-   100% { opacity:0; transform: translateX(15vw); }  
-  }
