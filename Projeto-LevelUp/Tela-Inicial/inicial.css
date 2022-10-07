@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-image: url("src/backgroundlevelup.png"); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+.logo-levelup {
+    height: auto;
+    max-width: 50% 
+} 
+
+.imagem-central {
+    height: 50vh;
+}
+
+.botao {
+    font-family: 'Press Start 2P', cursive;
+    background: #ffda33;
+    border: solid black;
+    border-width: 2px;
+}
