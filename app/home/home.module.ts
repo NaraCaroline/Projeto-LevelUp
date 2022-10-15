@@ -1,21 +1,15 @@
+import { ViewLoginComponent } from './view-login/view-login.component';
+import { ViewCadastroComponent } from './view-cadastro/view-cadastro.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
-import { ViewLoginComponent } from './view-login/view-login.component';
-
-
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
-  declarations: [
-    HomeComponent,
-    ViewLoginComponent
-  ],
   imports: [
-    CommonModule
+    CommonModule,
+    BrowserModule
   ],
-  exports: [
-    HomeComponent,
-    ViewLoginComponent
-  ]
-})
+  declarations: [HomeComponent, ViewCadastroComponent, ViewLoginComponent],
+  exports: [HomeComponent, ViewCadastroComponent, ViewLoginComponent]})
 export class HomeModule { }
