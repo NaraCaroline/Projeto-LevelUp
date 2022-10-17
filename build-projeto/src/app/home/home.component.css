@@ -1,0 +1,73 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: rgb(34, 192, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(34, 192, 255, 1) 0%,
+    rgba(59, 182, 154, 1) 55%,
+    rgba(110, 192, 53, 1) 100%
+  );
+}
+
+.btn-outline-dark,
+.btn-outline-dark:hover,
+.btn-outline-dark:active,
+.btn-outline-dark:enabled {
+  border: none;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h1,
+h3 {
+  color: #18486a;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+a {
+  color: #18486a;
+}
+
+.btnVoltar {
+  padding: 10px;
+}
+
+@media screen and (min-width: 700px) {
+  .fundo {
+    background-image: url('../../assets/backgroundlevelup.png');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .setaVoltar {
+    visibility: hidden;
+  }
+
+  .btn-outline-dark::after {
+    content: 'Voltar';
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: -25px;
+  }
+}

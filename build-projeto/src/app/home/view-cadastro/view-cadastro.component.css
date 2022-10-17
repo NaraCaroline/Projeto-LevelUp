@@ -1,0 +1,70 @@
+.text-center {
+  margin: 5vw 2vh;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #24242472;
+}
+
+input {
+  background-color: #83ceec53;
+  box-shadow: none;
+  border: none;
+}
+
+.input-group {
+  margin-top: 20px;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  background-color: #83ceec53;
+  border: none;
+}
+
+.card-header {
+  background-color: white;
+  width: 100%;
+}
+
+.card-body {
+  border-top: 1px solid #5b5b5b;
+}
+.nav {
+  justify-content: center;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  font-weight: bolder;
+  border: none;
+  border-bottom: 5px solid #52c319;
+  border-radius: 2px;
+}
+
+.btn-primary {
+  box-shadow: 0px 4px 2px 0px rgb(0 0 0 / 28%);
+  border: none;
+  margin: 32px 14px;
+  width: 70%;
+  background: rgb(110, 192, 53);
+  background: linear-gradient(
+    265deg,
+    rgba(110, 192, 53, 1) 0%,
+    rgba(59, 182, 154, 1) 85%,
+    rgba(34, 192, 255, 1) 100%
+  );
+}
+
+@media screen and (min-width: 700px) {
+  .card-body {
+    border-top: 1px solid #05bdfb;
+  }
+
+  .text-center {
+    width: 450px;
+    height: 500px;
+    margin: 0 auto;
+  }
+}
