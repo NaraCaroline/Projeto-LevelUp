@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-image: url("src/backgroundlevelup.png"); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+.logo-levelup {
+    max-width: 50%;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.botao {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 18px;
+    background: #ffda33;
+    border: solid black;
+    border-width: 2px;
+    position:absolute;
+    bottom: 22%;
+    right: auto;
+}
+
+/* -------- MOBILE -------- */
+
+@media (max-width: 915px){
+    .logo-levelup {
+        max-width: 85%;
+        top: 45%;
+    }
+
+    .botao {
+        bottom: 27%;
+        right: auto;
+        height: 6%;
+        width: 35%;
+    }
+}
+
+@media (max-width: 600px){
+    .logo-levelup {
+        max-width: 85%;
+        top: 45%;
+    }
+
+    .botao {
+        bottom: 30%;
+        right: auto;
+        height: 7%;
+        width: 50%;
+    }
+}
+
+@media (max-width: 300px){
+    .logo-levelup {
+        max-width: 90%;
+        top: 45%;
+    }
+    
+    .botao {
+        bottom: 30%;
+        right: auto;
+        height: 6%;
+        width: 50%;
+        font-size: 15px;
+     }
+}
