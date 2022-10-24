@@ -6,8 +6,9 @@
 }
 
 body {
-  background-image: url(../../../assets/backgroundlevelup.png);
+  background-image: url("../../../assets/backgroundlevelup.png");
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,7 +16,6 @@ body {
   gap: 5px;
   height: 100vh;
   margin: 0;
-  background: #aaaccc;
 }
 
 .fluid {
@@ -26,9 +26,9 @@ body {
   text-align: center;
 }
 img {
-  width: 70%;
+  width: 100%;
   text-align: center;
-  padding: 30px;
+  margin: 30px 0px;
 }
 
 a {
@@ -65,4 +65,21 @@ button:active {
     inset -5px 0px 0px rgba(255, 255, 255, 0.3),
     inset 0 5px 0px rgba(0, 0, 0, 0.3), inset 5px 0px 0px rgba(0, 0, 0, 0.2),
     5px 0px 0px #000, -5px 0px 0px #000, 0px 5px 0px #000, 0px -5px 0px #000;
+}
+
+@media screen and (min-width: 500px) {
+  img {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 500px) {
+  img {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  img {
+    width: 650px;
+  }
 }

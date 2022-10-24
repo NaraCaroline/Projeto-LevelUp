@@ -1,0 +1,328 @@
+@import url("http://fonts.cdnfonts.com/css/segoe-ui-4");
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  /*Degrade so no BG mobile*/
+  height: 100%;
+  background: linear-gradient(
+    180.22deg,
+    #009fdf -5.63%,
+    #2dc3ff 22.9%,
+    #7ed63a 103.48%,
+    rgba(82, 237, 134, 0.991619) 121.16%
+  );
+}
+
+.butao {
+  visibility: hidden;
+}
+
+.Bev_cell {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 50px;
+
+  text-align: center;
+  letter-spacing: -0.005em;
+
+  color: #18486a;
+}
+
+.Bev_pc {
+  margin: -12px;
+  visibility: hidden;
+}
+
+.Beve {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+  /* identico ao height do box */
+
+  text-align: center;
+  letter-spacing: -0.005em;
+
+  color: #18486a;
+}
+
+.Textus_cell {
+  margin-top: 25%;
+  margin-bottom: -55%;
+}
+
+.Textus_cell h1,
+.Textus_cell h3 {
+  margin-bottom: -10px;
+
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.Textus_cell h3 {
+  font-size: 13px;
+}
+
+.PsaForm {
+  background: #f5f5f5;
+
+  border-radius: 10px;
+
+  /*Apenas Mobile*/
+
+  width: 80%;
+
+  margin: auto;
+
+  margin-top: 60%;
+  /*=============*/
+
+  padding-top: 5px;
+
+  text-align: center;
+}
+
+.BrigaCasal a:link,
+.BrigaCasal a:visited,
+.BrigaCasal p {
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: -0.005em;
+  color: rgba(36, 36, 36, 0.45);
+  display: inline;
+  text-decoration: none;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.1s;
+}
+
+.BrigaCasal a:hover {
+  border-bottom: solid #52c319;
+}
+
+.Login {
+  border: none;
+  border-bottom: 5px solid #52c319;
+  border-radius: 2px;
+}
+
+.Cadastro {
+  margin-right: 30px;
+}
+
+.BrigaCasal {
+  text-align: center;
+  margin-top: -7%;
+}
+
+form {
+  margin: 16px;
+  margin-top: 8%;
+  margin-bottom: 7%;
+}
+
+.hihiha {
+  margin-top: 0.2px;
+  border-bottom: solid #5b5b5b73 1px;
+}
+
+input[type="password"],
+input[type="email"] {
+  width: 80%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  margin: auto;
+  margin-bottom: 8px;
+}
+
+.IconGay {
+  position: absolute;
+  margin: 8px 10px 0px -30px;
+  width: 25px;
+}
+
+.User {
+  background: rgba(131, 206, 236, 0.45);
+  border-radius: 8px;
+}
+
+.Password {
+  background: rgba(131, 206, 236, 0.45);
+  border-radius: 8px;
+}
+
+.Buttom {
+  background: linear-gradient(270deg, #6ec035 0%, #3bb69a 81.37%, #22c0ff 100%);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 9px;
+
+  margin: auto;
+  margin-bottom: 10%;
+
+  width: 200px;
+  height: 40px;
+
+  color: white;
+
+  font-size: 20px;
+}
+
+.link_pass {
+  visibility: hidden;
+}
+
+.input-group
+  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  background-color: #83ceec73;
+}
+
+.input-group-text {
+  background-color: #83ceec73;
+}
+
+.why {
+  background-color: #c4e6f3;
+}
+
+.link_cad_pc {
+  visibility: hidden;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    background-image: url("../../../assets/backgroundlevelup.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .butao {
+    text-align: center;
+    margin-top: -30px;
+    visibility: visible;
+  }
+
+  .voltar h3,
+  .voltar {
+    background: white;
+    width: 110px;
+    margin: 2.7%;
+    border-radius: 5px;
+    color: #18486a;
+    font-size: 20px;
+    text-decoration: none;
+    box-shadow: 4px 4px #8888886b;
+  }
+
+  .Bev_pc {
+    margin: 0;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 50px;
+
+    text-align: center;
+    letter-spacing: -0.005em;
+
+    color: #18486a;
+
+    visibility: visible;
+  }
+
+  .Textus_cell {
+    visibility: hidden;
+  }
+
+  .BrigaCasal {
+    visibility: hidden;
+  }
+
+  .hihiha {
+    visibility: hidden;
+  }
+
+  .hihiha2 {
+    margin-top: 0.2px;
+    border-bottom: solid #05bdfb 1px;
+  }
+
+  .PsaForm {
+    background: #f5f5f5;
+    border-radius: 10px;
+    width: 30%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    transform: translate(115%, -50%);
+    height: 435px;
+    position: fixed;
+  }
+
+  form {
+    margin: 17px;
+    margin-top: 8%;
+    margin-bottom: 7%;
+  }
+
+  .link_pass {
+    text-decoration: none;
+    margin-top: -20px;
+    float: right;
+    visibility: visible;
+  }
+
+  .forgo {
+    font-size: 12px;
+    color: #003962;
+  }
+
+  .Buttom {
+    background: linear-gradient(
+      270deg,
+      rgb(110, 192, 53) 0%,
+      rgb(59, 182, 154) 81.37%,
+      rgb(34, 192, 255) 100%
+    );
+    box-shadow: rgb(0 0 0 / 20%) 0px 4px 4px;
+    border-radius: 9px;
+    margin-top: 75px;
+    width: 194px;
+    margin: 48px;
+    margin-bottom: -1px;
+  }
+
+  .cad {
+    margin-top: 2px;
+  }
+
+  .link_cad_pc {
+    visibility: visible;
+    text-decoration: none;
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.045em;
+
+    color: #181818;
+  }
+
+  .input-group-text {
+    height: 50px;
+  }
+}

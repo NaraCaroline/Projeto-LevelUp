@@ -61,7 +61,7 @@ input {
 }
 
 .btnCadastro {
-  bottom: 4vh;
+  bottom: -2vh;
 }
 
 .btn-primary {
@@ -78,6 +78,10 @@ input {
   );
 }
 
+.link-login {
+  visibility: hidden;
+}
+
 @media screen and (min-width: 500px) {
   .text-center {
     margin: 3vw 0vh;
@@ -86,13 +90,35 @@ input {
 }
 
 @media screen and (min-width: 700px) {
+  .card-header {
+    display: none;
+  }
+
+  .card-header:after {
+    visibility: visible;
+    content: "Bem-vindo(a) !";
+  }
+
   .card-body {
     border-top: 1px solid #05bdfb;
   }
 
   .text-center {
     width: 450px;
-    height: 500px;
+    height: 490px;
     margin: 0 auto;
+  }
+
+  .link-login {
+    visibility: visible;
+  }
+
+  .link-login a {
+    font-weight: bolder;
+  }
+
+  .link-login a:hover {
+    transition: 0.3s;
+    color: #52c319;
   }
 }
