@@ -1,6 +1,21 @@
+.validacaoErro{
+font-size: 14px;
+top: -10%;
+}
+
+.validation-error {
+  color: red;
+}
+
 .text-center {
   margin: 5vw 2vh;
   border-radius: 10px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 a {
@@ -12,6 +27,7 @@ input {
   background-color: #83ceec53;
   box-shadow: none;
   border: none;
+
 }
 
 .input-group {
@@ -26,13 +42,16 @@ input {
 .card-header {
   background-color: white;
   width: 100%;
+
 }
 
 .card-body {
   border-top: 1px solid #5b5b5b;
 }
+
 .nav {
   justify-content: center;
+
 }
 
 .nav-tabs .nav-item.show .nav-link,
@@ -41,6 +60,11 @@ input {
   border: none;
   border-bottom: 5px solid #52c319;
   border-radius: 2px;
+
+}
+
+.btnCadastro {
+  bottom: 4vh;
 }
 
 .btn-primary {
@@ -66,5 +90,11 @@ input {
     width: 450px;
     height: 500px;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card-body {
+    width: 100vw;
   }
 }

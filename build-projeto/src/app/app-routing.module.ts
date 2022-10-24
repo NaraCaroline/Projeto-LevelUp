@@ -1,27 +1,24 @@
-import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+import { AppComponent } from './app.component';
 import { ViewLoginComponent } from './home/view-login/view-login.component';
-import { TelaInicioComponent } from './home/tela-inicio/tela-inicio.component';
 import { HomeComponent } from './home/home.component';
+import { ModuleWithProviders } from '@angular/core';
 
-const routes: Routes = [
+const APP_ROUTES: Routes = [
   {
     path: '',
-    component: TelaInicioComponent,
+    component: AppComponent,
   },
   {
     path: 'login',
     component: ViewLoginComponent,
   },
   {
-    path: 'sign-up',
+    path: 'signup',
     component: HomeComponent,
   },
 ];
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
-})
-export class AppRoutingModule {}
+export const routing: ModuleWithProviders<any> =
+  RouterModule.forRoot(APP_ROUTES);
