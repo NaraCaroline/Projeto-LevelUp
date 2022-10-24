@@ -2,10 +2,10 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { ViewLoginComponent } from './home/view-login/view-login.component';
 import { HomeComponent } from './home/home.component';
-import { ModuleWithProviders } from '@angular/core';
+import { ModuleWithProviders, NgModule } from '@angular/core';
 import { TelaInicioComponent } from './home/tela-inicio/tela-inicio.component';
 
-const APP_ROUTES: Routes = [
+const appRoutes: Routes = [
   {
     path: '',
     component: TelaInicioComponent,
@@ -19,6 +19,11 @@ const APP_ROUTES: Routes = [
     component: HomeComponent,
   },
 ];
-
 export const routing: ModuleWithProviders<any> =
-  RouterModule.forRoot(APP_ROUTES);
+  RouterModule.forRoot(appRoutes);
+
+@NgModule({
+  imports: [RouterModule.forRoot(appRoutes)],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}

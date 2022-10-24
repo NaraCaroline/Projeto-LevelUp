@@ -1,6 +1,6 @@
-.validacaoErro{
-font-size: 14px;
-top: -10%;
+.validacaoErro {
+  font-size: 14px;
+  top: -10%;
 }
 
 .validation-error {
@@ -8,7 +8,7 @@ top: -10%;
 }
 
 .text-center {
-  margin: 5vw 2vh;
+  width: 90%;
   border-radius: 10px;
 
   position: fixed;
@@ -24,10 +24,10 @@ a {
 }
 
 input {
+  font-size: 0.8rem;
   background-color: #83ceec53;
   box-shadow: none;
   border: none;
-
 }
 
 .input-group {
@@ -42,7 +42,6 @@ input {
 .card-header {
   background-color: white;
   width: 100%;
-
 }
 
 .card-body {
@@ -51,7 +50,6 @@ input {
 
 .nav {
   justify-content: center;
-
 }
 
 .nav-tabs .nav-item.show .nav-link,
@@ -60,7 +58,6 @@ input {
   border: none;
   border-bottom: 5px solid #52c319;
   border-radius: 2px;
-
 }
 
 .btnCadastro {
@@ -81,6 +78,13 @@ input {
   );
 }
 
+@media screen and (min-width: 500px) {
+  .text-center {
+    margin: 3vw 0vh;
+    width: 75%;
+  }
+}
+
 @media screen and (min-width: 700px) {
   .card-body {
     border-top: 1px solid #05bdfb;
@@ -90,11 +94,5 @@ input {
     width: 450px;
     height: 500px;
     margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .card-body {
-    width: 100vw;
   }
 }

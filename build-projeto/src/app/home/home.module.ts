@@ -6,8 +6,8 @@ import { HomeComponent } from './home.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { TelaInicioComponent } from './tela-inicio/tela-inicio.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { routing } from './../app.routing';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { routing } from '../app-routing.module';
 
 @NgModule({
   imports: [
@@ -15,8 +15,8 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     ReactiveFormsModule,
     FormsModule,
-    routing,
     RouterModule,
+    routing,
   ],
   declarations: [
     HomeComponent,

@@ -22,13 +22,27 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
+.container {
+  text-align: center;
+}
+img {
+  width: 70%;
+  text-align: center;
+  padding: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
 
 button {
+  width: 35%;
   display: inline-block;
   background-color: #f1d12e;
   color: #000;
   border: none;
-  font-size: 1.4rem;
+  font-size: 0.8rem;
   margin: 5px;
   padding: 15px 20px;
 
